@@ -26,6 +26,27 @@
 	   background: url('images/two.jpg') no-repeat;
 	   background-size: cover;
        }
+
+       button {
+	   width: 70%;
+	   font-size: 2.5rem;
+	   padding: 1rem 0;
+	   display: block;
+	   margin: auto;
+	   color: #555;
+	   border: 1px solid #aaa;
+       }
+
+       button ~ button {
+	   margin-top: 3rem;
+       }
+
+       .button-container {
+	   width: 100%;
+	   position: absolute;
+	   bottom: 4rem;
+	   margin: auto;
+       }
        
       </style>
   </head>
@@ -34,7 +55,17 @@
 Organic
     </header>
     <div class="body">
-
+	<div class="button-container">
+	    <button id="diy">
+		Do it yourself
+	    </button>
+	    <button id="specialist">
+		Find a specialist
+	    </button>
+	    <button id="products">
+		Buy products
+	    </button>
+	</div>
     </div>
   </body>
 </html>
