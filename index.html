@@ -75,6 +75,9 @@ Organic
 		  	var element = event.target;
 			if (element.dataset.title) {
 				document.title = element.dataset.title;	  
+				if (window.AppInventor) {
+					window.AppInventor.WebViewString = element.dataset.title;	
+				}
 			}
 		  });
 	  </script>
