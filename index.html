@@ -59,16 +59,24 @@ Organic
     </header>
     <div class="body">
 	<div class="button-container">
-	    <button id="diy">
+	    <button data-title="diy" id="diy">
 		Do it yourself
 	    </button>
-	    <button id="specialist">
+	    <button data-title="specialist" id="specialist">
 		Find a specialist
 	    </button>
-	    <button id="products">
+	    <button data-title="products" id="products">
 		Buy products
 	    </button>
 	</div>
     </div>
+	  <script>
+		  document.addEventListener("click", function (event) {
+		  	var element = event.target;
+			if (element.dataset.title) {
+				document.title = element.dataset.title;	  
+			}
+		  });
+	  </script>
   </body>
 </html>
