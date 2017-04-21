@@ -76,7 +76,7 @@ Organic
 			if (element.dataset.title) {
 				document.title = element.dataset.title;	  
 				if (window.AppInventor) {
-					window.AppInventor.WebViewString = element.dataset.title;	
+					window.AppInventor.setWebViewString(element.dataset.title);
 				}
 			}
 		  });
